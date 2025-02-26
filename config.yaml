@@ -1,6 +1,6 @@
 pdf_path: "path/to/your/document.pdf" # actually supports all file types LlamaIndex supports, see: https://github.com/run-llama/llama_index/blob/6c72f27ab52a8214a4a496aaf876a296061fad57/llama-index-core/llama_index/core/readers/file/base.py#L65
-num_topics: 2
-num_turns: 1
+num_topics: 5
+num_turns: 6
 output_dir: "output"
 export_conversation_json: true
 

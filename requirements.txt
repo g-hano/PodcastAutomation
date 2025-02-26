@@ -1,0 +1,11 @@
+kokoro==0.7.16
+soundfile>=0.12.1
+llama-index
+llama-index-llms-ollama
+llama-index-llms-anthropic
+llama-index-llms-openai
+llama-index-llms-groq
+librosa
+misaki[ja]
+misaki[zh]
+colorama

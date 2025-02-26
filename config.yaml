@@ -1,0 +1,42 @@
+pdf_path: "path/to/your/document.pdf" # actually supports most file types
+num_topics: 2
+num_turns: 1
+output_dir: "en2it"
+export_conversation_json: true
+
+models:
+# Your model names MUST be in "<provider-name>/<model-name>" format
+  topic_generator: "ollama/qwen2.5:14b"
+  podcast_moderator: "ollama/llama3.1:8b"
+  podcast_host: "ollama/llama3.1:8b"
+  podcast_guest: "ollama/llama3.1:8b"
+  intro_generator: "ollama/qwen2.5:14b"
+  outro_generator: "ollama/llama3.1:8b"
+  translator: "ollama/qwen2.5:14b"
+  providers:
+    openai_api_key: "sk-..."       # Your OpenAI API key
+    anthropic_api_key: "sk-ant-..." # Your Anthropic API key
+    groq_api_key: "gsk_..."         # Your Groq API key
+    ollama_base_url: "http://localhost:11434"  # Default Ollama server URL
+
+audio:
+  lang: "i"  # Language codes: see Language Codes section below
+  host_voice: "if_sara"       # Voice name (see Available Voices section)
+  moderator_voice: "im_nicola" # Voice name
+  guest_voice: "im_nicola"    # Voice name
+  output_dir: "output"
+  output_file: "podcast.wav"
+  chunk_size: 200
+  music_path: "C:/Users/Cihan/Desktop/doraemon-agents/music3/instrumental (11).mp3"
+  vocal_volume: 0  # in dB
+  bg_intro_volume: -12  # optional
+  bg_content_volume: -20  # optional
+  bg_outro_volume: -12
+  generate_subtitles: true   # Generate subtitle files
+  subtitle_format: "srt"     # "srt" or "vtt"
+
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/podcast_generator.log"
+  verbose: true  # Show colored conversation in console during generation

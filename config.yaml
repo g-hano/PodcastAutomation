@@ -1,7 +1,7 @@
-pdf_path: "path/to/your/document.pdf" # actually supports most file types
+pdf_path: "path/to/your/document.pdf" # actually supports all file types LlamaIndex supports, see: https://github.com/run-llama/llama_index/blob/6c72f27ab52a8214a4a496aaf876a296061fad57/llama-index-core/llama_index/core/readers/file/base.py#L65
 num_topics: 2
 num_turns: 1
-output_dir: "en2it"
+output_dir: "output"
 export_conversation_json: true
 
 models:
@@ -20,14 +20,13 @@ models:
     ollama_base_url: "http://localhost:11434"  # Default Ollama server URL
 
 audio:
-  lang: "i"  # Language codes: see Language Codes section below
-  host_voice: "if_sara"       # Voice name (see Available Voices section)
-  moderator_voice: "im_nicola" # Voice name
-  guest_voice: "im_nicola"    # Voice name
-  output_dir: "output"
+  lang: "e"  # Language codes: see Language Codes section below
+  host_voice: "ef_dora"       # Voice name (see Available Voices section)
+  moderator_voice: "em_alex" # Voice name
+  guest_voice: "em_santa"    # Voice name
   output_file: "podcast.wav"
   chunk_size: 200
-  music_path: "C:/Users/Cihan/Desktop/doraemon-agents/music3/instrumental (11).mp3"
+  music_path: "path/to/background/music"
   vocal_volume: 0  # in dB
   bg_intro_volume: -12  # optional
   bg_content_volume: -20  # optional

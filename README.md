@@ -19,7 +19,7 @@ An AI-driven podcast generation tool that creates professional audio podcasts fr
 ```bash
 # Clone the repository
 git clone https://github.com/g-hano/PodcastAutomation.git
-cd podcast-generator
+cd PodcastAutomation
 
 # Install dependencies
 pip install -r requirements.txt
@@ -217,3 +217,4 @@ Moderator: What do you think about...
 ## License
 
 MIT License
+
